@@ -1,16 +1,16 @@
 <!-- Unit 13 Project
 Requirements
-[  ] Two Interactive Drop-down Inputs 
-[  ] Two Different jQuery Animation Methods 
-[  ] Add Five CSS Declarations
-[  ] Include Three Images
+[x] Two Interactive Drop-down Inputs 
+[ x ] Two Different jQuery Animation Methods 
+[x  ] Add Five CSS Declarations
+[x  ] Include Three Images
 
 Select ONE Additional Feature to Add  
 [ no ] Feature 1 - Google Font
 [ no ] Feature 2 - Upload a Font
 [ no ] Feature 3 - .mouseover() Method
 [ no ] Feature 4 - :hover Feature 
-[ no ] Feature 5 - Add an Additional Interactive Drop-down
+[  x] Feature 5 - Add an Additional Interactive Drop-down
 -->
 
 <!DOCTYPE html>
@@ -21,39 +21,115 @@ Select ONE Additional Feature to Add
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1>Quiz About [Me]</h1>
+    <h1><u>Quiz About <em>Me!</em></u></h1>
     <hr />
     <!-- Movie Question -->
     <form id="movie-form">
       <label>
         🎥 What is my favorite movie?
         <select id="movie-answer">
-          <option value="movie1">movie 1</option>
-          <option value="movie2">movie 2</option>
-          <option value="movie3">movie 3</option>
-          <option value="movie4">movie 4</option>
+          <option value="movie1">Little Miss Sunshine</option>
+          <option value="movie2">Fantastic Mr.Fox</option>
+          <option value="movie3">Megamind</option>
+          <option value="movie4">How to Train Your Dragon</option>
+           <option value="movie5">Beetlejuice</option>
         </select>
       </label>
-      <button type="submit">Check Movie Answer</button>
+      <button type="submit">Check  Answer</button>
     </form>
-    <div id="movie-result"></div>
+    <div id="movie-result">
+ 
+    </div>
+    
+    <img id="movie"
+src="https://m.media-amazon.com/images/M/MV5BMTgzNTgzODU0NV5BMl5BanBnXkFtZTcwMjEyMjMzMQ@@._V1_FMjpg_UX1000_.jpg" width="200">
+   
+    
+    
     <hr />
-    <!-- Book Question -->
-    <form id="book-form">
+    <!-- Instrument Question -->
+    <form id="i-form">
       <label>
-        📖 What is my favorite book?
-        <select id="book-answer">
-          <option value="book1">book 1</option>
-          <option value="book2">book 2</option>
-          <option value="book3">book 3</option>
-          <option value="book4">book 4</option>
+        📖 What instrument(s) do I play ?
+        <select id="i-answer">
+          <option value="i1">Bassoon and Clarinet</option>
+          <option value="i2">Bassoon and Alto Saxophone</option>
+          <option value="i3">Just Bassoon</option>
+          <option value="i4">Trombone</option>
+           <option value="i5">Concertina</option>
         </select>
       </label>
-      <button type="submit">Check Book Answer</button>
+      <button type="submit">Check Answer</button>
     </form>
-    <div id="book-result"></div>
+    
+    <div id="i-result">
+    
+    </div>
+    
+    
+    <img id="bassoon"
+       src="data:image/jpeg;base64,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"
+         width="200">
+
+      
+      <img id="sax" src="data:image/jpeg;base64,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">
+           
+      
+       <form id="color-form">
+      <label>
+         What is my favorite color?
+        <select id="color-answer">
+          <option value="color1">Turquoise</option>
+          <option value=" color2">Periwinkle</option>
+          <option value="color3">Olive Green</option>
+          <option value="color4">Black</option>
+          <option value="color5">Chartreuse</option>
+        </select>
+      </label>
+      <button type="submit">Check  Answer</button>
+    </form>
+    <div id="color-result">
+ 
+    </div>
+    
+       <img id="green"
+         src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISDxUPDxIVFRUVDRUVFRUVFRUVFRUVFRUWFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NDw0NDysZFRkrKy0rLS0tLS0tKy0tLSsrKysrKzctLS0rKysrKysrKys3KystKysrKy0rKysrKysrK//AABEIAOEA4QMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAAAAQIDBP/EABkQAQEBAQEBAAAAAAAAAAAAAAARARJhAv/EABcBAQEBAQAAAAAAAAAAAAAAAAABAgX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDzxUpXDFBAIsAEqgBCIApEq0Ehy1QGeTlUUSENN1AIiAbjG41UoM7ictwgMRcxqJAIQSqLBKA61ahUGs0ZAaKzSg0hUBSolBtGaUGhmnQNUrNQGqVmpQaGOloKFAIqVaomoqaDO6m6fTG6DQxQHoolGRaUIAqAKtZAWqzQFIhQVCiiQCghpqRAiUAVcZXFGxKVRdZ3VrO6is6xuN6zugyoCO9AQCFWgipQAAClQBRFoAAFAUIm4tTUGRUAxUVQpTWRWqlSpQXWdKmiIqKK7USiI1RkoNCVAaEpQBKlBRFzQFSlBREoNDO6lBpKlWgqVEUWpRAKUqCqyqACKo6mBWUVKVQRUUAKAAAgKCQCghU1AUQoKIoLUBRAKAm6VBSlTUBVZAdSorKLUIKLVrNKDQyAtKlAWlQoKggFAgCKAkKsQFqVAFRCiqJRQ3URNBaM30B6BKVlFClANQBRlVAAAogKMgNCVaCiUoGpSpoG6ggFKACUBU1N0TVASgPRBKMoozVAWsgNYrKgoCiJFqAAgNDK0GkKUERagIKgqRFQQSgKJoKIADrVQZRRKoBQAKgDVM1lQVCqogIAFQFKgCiAKalKKmooDIqAVFZBaJRR1M1BlGqJigqGLQEUBAAKrKgqVBQAAAARUFEAASlBUEA3UogAlAdaJmqiKqFBVZXAVKIC1KIC1KAFKhRVqsqqKGFAqCaKuoFBEqoACAbjOtICAoOoUqIoJQWlQBqozVoAICiKKQgACAKVBRUEoFEAQVKBUACpRAWiAOwyINFSlBaIAqslEUKUAAChQUTQApQUQoiCoChUXUBAiAqbqJQVAUddUGQAAMUAAAwAAADQAE0BBAFE0AGgUZRQE1ABNZAABR//2Q==" 
+              width="150">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+
+    
     <script>
+      
+         var $pic1= $("#bassoon")
+         $pic1.hide();
+      
+      
+     
+      
+      var $pic2= $("#green")
+         $pic2.hide();
+      
+       var $pic3= $("#movie")
+         $pic3.hide();
+      
+      var $pic4= $("#sax")
+       $pic4.hide();
+      
+      
       //Movie Question jQuery Code
       $("#movie-form").on("submit", function (event) {
         event.preventDefault();
@@ -62,25 +138,55 @@ Select ONE Additional Feature to Add
         var answer = $answer.val();
 
         if (answer === "movie1") {
-          $("#movie-result").text("YESSSS!");
+        
+          $("#movie-result").text("They're all correct but this one is slightly more correct than the others.");
+        
+       $("#movie").fadeIn( )
         } else {
-          $("#movie-result").text("Try Again!");
+          $("#movie-result").text("All of the choices were correct");
         }
       });
 
-      //Book Question jQuery Code
-      $("#book-form").on("submit", function (event) {
+      //Instrument Question jQuery Code
+      $("#i-form").on("submit", function (event) {
         event.preventDefault();
 
-        var $answer = $("#book-answer");
+        var $answer = $("#i-answer");
         var answer = $answer.val();
 
-        if (answer === "book1") {
-          $("#book-result").text("YESSSS!");
+        if (answer === "i2") {
+        $("#i-result").text("Correct!");
+          
+              $("#bassoon").slideDown( )
+          $("#sax").slideDown( )
+        
         } else {
-          $("#book-result").text("Try Again!");
+          $("#i-result").text("nope.");
         }
       });
+      
+      
+      //Color Question jQuery Code
+
+       $("#color-form").on("submit", function (event) {
+        event.preventDefault();
+
+        var $answer = $("#color-answer");
+        var answer = $answer.val();
+
+        if (answer === "color3") {
+              $("#color-result"). text("Correct!!") 
+              $("#green").fadeIn( )
+        } 
+         else {
+          $("#color-result").text("nuh uh");
+        }
+      });
+      
+      
+      
+      
+      
     </script>
   </body>
 
